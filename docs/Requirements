@@ -1,0 +1,37 @@
+1. The Chess game "DeepChess" will support the followig types of games
+    a. User vs Computer
+    b. User vs User
+    c. Computer vs Computer
+
+2. In computer mode it will support levels 1-20 with 1 being the lowest and 20 being the highest.
+
+3. DeepChess will support machine learning using AI.
+
+4. DeepChess will support both unrated and rated games involving a user.
+
+5. DeepChess will support a game being postponed with mutual agreement. When two users connect with
+   each other again they will be asked if the want to resume the previous game.
+
+6. DeepChess will record each move in a game.
+
+7. DeepChess will suppport undo command.
+
+8. DeepChess will support 1, 3, 5, 10, 15, 50, 15/10 and minute/increment type of games.
+
+9. When a user logs in he will be able to seek a game of his choosing with players
+   according to their rating.
+
+10. A user will be able to examine all his past games.
+
+11. DeepChess will contain database of international level games. The user can load and play
+    a game he chooses from the database.
+
+12. A user will not be able to make any illegal moves with a piece.
+
+13. DeepChess will support chat messaging between users who are playing with each other.
+
+14. DeepChess will support video chat between 2 users who are logged in and playing with each other.
+
+15. DeepChess will support hint and show scenarios.
+
+16. DeepChess will be supported on Android and iPhone.
