@@ -1,0 +1,23 @@
+1. UC-1: Start and Play
+   The user starts DeepChess. He sees the following the screen.
+   a. 64 square chess screen with black and white pieces.
+   b. The user can choose to play back or white.
+   c. The user will see a login screen or register to login.
+   d. The screen will contain a menu giving the option to load a past game.
+   e. The user plays an unrated game against the computer (default level 8)
+
+2. UC-2: Register/Login and Seek and game.
+   a. The user starts DeepChess. Then clicks on login. If the first time he is asked to register.
+   b. A central server is contacted when he click register.
+   c. The user enters username, password and a license key.
+   d. If the license key is authentic the username and password generation succeeds.
+      The user is sent a certificate which he installs.
+   e. The user can now seek a game of a certain type.
+
+3. UC-3: The user loads a game.
+   a. Each move is played after a configured delay.
+
+Design
+-------
+1. Java/AWT/Swing to be used for development since it is supported on both Android and iPhone.
+2. C++ will be used for engine development.
