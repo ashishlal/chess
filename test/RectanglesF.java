@@ -15,54 +15,53 @@ public class RectanglesF extends Frame implements
     int x1,y1,x2,y2;
     Frame about = new Frame("About DeepChess");
     public void mouseDragged(MouseEvent event)
-        // capture coordinates of new mouse position as it is
-        // dragged across the screen
-        {
-                Graphics g = getGraphics();
-                x2=event.getX();
-                y2=event.getY();
-        }
+    // capture coordinates of new mouse position as it is
+    // dragged across the screen
+    {
+        Graphics g = getGraphics();
+        x2=event.getX();
+        y2=event.getY();
+    }
 
-        //----------------------------------------------------------------
+    //----------------------------------------------------------------
+    public void mouseMoved(MouseEvent event)
+    {
+    }
 
-        public void mouseMoved(MouseEvent event)
-        {
-        }
+    //----------------------------------------------------------------
+    // implemented blank methods
+    public void mouseClicked(MouseEvent event){}
+    public void mouseEntered(MouseEvent event){}
+    public void mouseExited(MouseEvent event){}
 
-        //----------------------------------------------------------------
-        // implemented blank methods
-        public void mouseClicked(MouseEvent event){}
-        public void mouseEntered(MouseEvent event){}
-        public void mouseExited(MouseEvent event){}
+    //----------------------------------------------------------------
+    public void mousePressed(MouseEvent event)
+    // capture initial coordinates of mouse
+    {
+        x1=event.getX();
+        y1=event.getY();
 
-        //----------------------------------------------------------------
-        public void mousePressed(MouseEvent event)
-        // capture initial coordinates of mouse
-        {
-                x1=event.getX();
-                y1=event.getY();
+        Graphics g = getGraphics();
 
-                Graphics g = getGraphics();
+        // display reference point of coordinates (x1,y1)
+        g.drawString(".",x1,y1);
+    }
 
-                // display reference point of coordinates (x1,y1)
-                g.drawString(".",x1,y1);
-        }
+    public void mouseReleased(MouseEvent event)
+    // draw the appropriate shape when mouse button released;
+    // shape will be drawn between the coordinates (x1,y1) and (x2,y2)
+    {
+        Graphics g = getGraphics();
+    }
 
-        public void mouseReleased(MouseEvent event)
-        // draw the appropriate shape when mouse button released;
-        // shape will be drawn between the coordinates (x1,y1) and (x2,y2)
-        {
-                Graphics g = getGraphics();
-        }
-
-        //------------------------------------------------------------------
-        //      implemented blank methods
-        public void windowClosed(WindowEvent event){}
-        public void windowDeiconified(WindowEvent event){}
-        public void windowIconified(WindowEvent event){}
-        public void windowActivated(WindowEvent event){}
-        public void windowDeactivated(WindowEvent event){}
-        public void windowOpened(WindowEvent event){}
+    //------------------------------------------------------------------
+    //      implemented blank methods
+    public void windowClosed(WindowEvent event){}
+    public void windowDeiconified(WindowEvent event){}
+    public void windowIconified(WindowEvent event){}
+    public void windowActivated(WindowEvent event){}
+    public void windowDeactivated(WindowEvent event){}
+    public void windowOpened(WindowEvent event){}
 
         //------------------------------------------------------------------
 

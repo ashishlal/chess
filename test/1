@@ -1,27 +1,12 @@
-Script started on Tue 23 Oct 2012 03:50:18 PM JST
-]0;ashish@ashishpc: ~/test/chess/testashish@ashishpc:~/test/chess/test$ exitreset;javac -Xlint ChessBoard.java
-[3g        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>ChessBoard.java:25: cannot find symbol
-symbol  : variable getPieceToImageName
-location: class Global
-        for (Map.Entry<String, String> entry : Global.getPieceToImageName.entrySet()) {
-                                                     ^
-./Global.java:49: cannot find symbol
-symbol  : class Pair
-location: class Tuple<T,U>
-    Pair<T, U> other = getClass().cast( oth );
-    ^
-./Global.java:97: cannot find symbol
-symbol  : variable postion
-location: class Global
-                return postion;
-                       ^
-./Global.java:203: incompatible types
-found   : java.util.Map<java.lang.String,java.lang.String>
-required: java.util.Map<java.lang.String,javax.swing.ImageIcon>
-    public static Map<String, ImageIcon> getPieceToImageName() { return pieceToImageName; }
-                                                                        ^
-4 errors
+Script started on Mon 29 Oct 2012 01:07:14 PM JST
+]0;ashish@ashishpc: ~/test/chess/testashish@ashishpc:~/test/chess/test$ exitreset;javac ChessBoard.java 
+[3g        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>./Global.java:694: ')' expected
+             ) {
+              ^
+Note: ./Global.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
 ]0;ashish@ashishpc: ~/test/chess/testashish@ashishpc:~/test/chess/test$ exit
 exit
 
-Script done on Tue 23 Oct 2012 03:50:25 PM JST
+Script done on Mon 29 Oct 2012 01:07:21 PM JST
